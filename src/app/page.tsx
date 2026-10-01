@@ -6,6 +6,9 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { HowItWorks } from "@/components/landing/HowItWorks";
+import { Ebooks } from "@/components/landing/Ebooks";
+import { Pricing } from "@/components/landing/Pricing";
+import { Services } from "@/components/landing/Services";
 import { Testimonials } from "@/components/landing/Testimonials";
 
 export default function Home() {
@@ -15,8 +18,11 @@ export default function Home() {
       <Hero />
       <Benefits />
       <HowItWorks />
+      <Services />
+      <Pricing />
       <About />
       <Testimonials />
+      <Ebooks />
       <Faq />
       <ContactCta />
       <Footer />
