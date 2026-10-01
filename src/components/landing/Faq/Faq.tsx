@@ -1,5 +1,5 @@
 import { faqs } from "@/data/site";
-import { SectionHeading } from "./SectionHeading";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 export function Faq() {
   return (

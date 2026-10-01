@@ -1,4 +1,4 @@
-import { SectionHeading } from "./SectionHeading";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 const steps = [
   ["01", "Acolher", "Entender sua rotina, seus objetivos e o que você realmente precisa neste momento."],

@@ -1,5 +1,5 @@
 import { assessments, services } from "@/data/site";
-import { SectionHeading } from "./SectionHeading";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 export function Services() {
   return (

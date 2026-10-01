@@ -1,4 +1,4 @@
-import { SectionHeading } from "./SectionHeading";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 export function Testimonials() {
   return (
