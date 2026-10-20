@@ -5,7 +5,7 @@ export function Ebooks() {
   return (
     <section className="bg-[#f4f0e8] py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-12">
-        <div className="flex aspect-[4/3] max-w-sm items-end rounded-3xl bg-emerald-900 p-8 text-white">
+        <div className="mx-auto flex aspect-[4/3] w-full max-w-sm items-end rounded-3xl bg-emerald-900 p-6 text-white sm:p-8 lg:mx-0">
           <p className="text-3xl font-medium leading-tight">Conteúdos para apoiar sua jornada.</p>
         </div>
         <div>

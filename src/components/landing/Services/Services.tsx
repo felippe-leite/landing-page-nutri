@@ -15,7 +15,7 @@ export function Services() {
               </div>
             ))}
           </div>
-          <div className="rounded-3xl bg-[#f4f0e8] p-8">
+          <div className="rounded-3xl bg-[#f4f0e8] p-6 sm:p-8">
             <h3 className="text-2xl font-medium text-stone-900">Avaliações disponíveis</h3>
             <ul className="mt-6 space-y-3 text-stone-600">
               {assessments.map((assessment) => <li key={assessment}>• {assessment}</li>)}

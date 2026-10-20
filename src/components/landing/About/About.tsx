@@ -5,7 +5,7 @@ export function About() {
   return (
     <section id="sobre" className="bg-[#f4f0e8] py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-12">
-        <div className="flex aspect-square max-w-sm items-end rounded-[2rem] bg-emerald-800 p-8 text-white">
+        <div className="mx-auto flex aspect-square w-full max-w-sm items-end rounded-[2rem] bg-emerald-800 p-6 text-white sm:p-8 lg:mx-0">
           <p className="text-3xl font-medium leading-tight">
             Cuidar da saúde também pode ser leve.
           </p>
