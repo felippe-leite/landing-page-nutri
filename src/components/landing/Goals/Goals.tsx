@@ -8,7 +8,7 @@ const goals = [
   { title: "Mais qualidade de vida", text: "Cuidado com a alimentação e a saúde em diferentes fases da vida.", image: "c69a0a0523bf939baa22bf06add78bae.jpg", alt: "Pessoas mais velhas se exercitando ao ar livre" },
 ];
 
-export function Testimonials() {
+export function Goals() {
   return (
     <section className="bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-12">

@@ -93,6 +93,8 @@ Conceitos principais da comunicação:
 
 ## Informações pendentes
 
+> Lista de acompanhamento com checkboxes: [pendencias.md](./pendencias.md)
+
 - Foto profissional da nutricionista
 - Logo e identidade visual
 - Formação e instituições de ensino

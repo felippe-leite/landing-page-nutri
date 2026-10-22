@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Logo } from "@/components/brand/Logo";
 import { getWhatsappLink, navLinks, siteConfig } from "@/data/site";
 
 export function Header() {
@@ -49,8 +49,8 @@ export function Header() {
       }`}
     >
       <div className={`relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 transition-[padding] duration-300 lg:px-12 ${scrolled ? "py-1" : "py-4"}`}>
-        <a href="#inicio" onClick={closeMenu} aria-label={`${siteConfig.name} — início`} className="brand-logo relative block h-[64px] w-[170px] shrink-0 overflow-hidden sm:w-[190px]">
-          <Image src="/assets/site-antigo/fc5abf076af75e7d75287ea6f7cb7429.jpg" alt={siteConfig.name} width={400} height={225} priority className="absolute left-1/2 top-1/2 w-[350px] max-w-none -translate-x-1/2 -translate-y-1/2 mix-blend-multiply sm:w-[380px]" />
+        <a href="#inicio" onClick={closeMenu} aria-label={`${siteConfig.name} — início`} className="shrink-0 py-2 transition-opacity hover:opacity-80">
+          <Logo />
         </a>
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-sm text-stone-600 lg:flex">
           {navLinks.map((link) => (

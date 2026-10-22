@@ -9,7 +9,7 @@ import { HowItWorks } from "@/components/landing/HowItWorks/HowItWorks";
 import { Ebooks } from "@/components/landing/Ebooks/Ebooks";
 import { Pricing } from "@/components/landing/Pricing/Pricing";
 import { Services } from "@/components/landing/Services/Services";
-import { Testimonials } from "@/components/landing/Testimonials/Testimonials";
+import { Goals } from "@/components/landing/Goals/Goals";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <Services />
       <Pricing />
       <About />
-      <Testimonials />
+      <Goals />
       <Ebooks />
       <Faq />
       <ContactCta />

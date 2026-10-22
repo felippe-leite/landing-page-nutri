@@ -1,18 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Fraunces, Hurricane, Manrope } from "next/font/google";
 import { ClickTracker } from "@/components/landing/ClickTracker/ClickTracker";
 import { FloatingWhatsapp } from "@/components/landing/FloatingWhatsapp/FloatingWhatsapp";
-import { siteConfig } from "@/data/site";
+import { siteConfig, siteUrl } from "@/data/site";
 import "./globals.css";
 
 const serif = Fraunces({ subsets: ["latin"], variable: "--font-fraunces", display: "swap", style: ["normal", "italic"] });
 const sans = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
-
-// Domínio próprio (NEXT_PUBLIC_SITE_URL) > domínio de produção da Vercel > local
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
+const script = Hurricane({ subsets: ["latin"], weight: "400", variable: "--font-hurricane", display: "swap" });
 
 const title ="Luana Leite de Souza | Nutricionista em Brasília e online";
 const description =
@@ -28,7 +24,6 @@ export const metadata: Metadata = {
     description,
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/images/foto-principal.jpeg", alt: `${siteConfig.name}, nutricionista` }],
   },
   twitter: { card: "summary_large_image", title, description },
 };
@@ -55,7 +50,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="pt-BR" className={`${serif.variable} ${sans.variable} ${script.variable}`}>
       <body>
         {children}
         <FloatingWhatsapp />

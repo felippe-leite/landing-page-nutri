@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getInstagramLink, getWhatsappLink, navLinks, siteConfig } from "@/data/site";
 
 export function Footer() {
@@ -28,7 +29,10 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-12 flex max-w-6xl flex-col gap-3 border-t border-white/10 pt-6 text-xs leading-6 lg:flex-row lg:items-center lg:justify-between lg:px-6">
         <p>© {new Date().getFullYear()} {siteConfig.name}. Todos os direitos reservados.</p>
-        <p className="max-w-xl">As informações deste site não substituem uma consulta individual. Seus dados de contato são usados apenas para responder ao seu atendimento.</p>
+        <p className="max-w-xl">
+          As informações deste site não substituem uma consulta individual.{" "}
+          <Link href="/privacidade" className="underline decoration-stone-600 underline-offset-4 transition hover:text-white">Política de privacidade</Link>
+        </p>
         <a href="#inicio" className="inline-flex min-h-11 items-center transition hover:text-white">Voltar ao início ↑</a>
       </div>
     </footer>
