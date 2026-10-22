@@ -18,11 +18,11 @@ export function ContactCta() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200">Seu próximo passo</p>
           <h2 className="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">Vamos começar essa conversa?</h2>
           <p className="mt-5 max-w-lg leading-7 text-emerald-50/90">Entre em contato para conhecer o acompanhamento e encontrar o melhor formato para você.</p>
-          <a href={getWhatsappLink()} target="_blank" rel="noreferrer" className="mt-8 inline-flex min-h-13 items-center gap-3 rounded-full bg-white px-7 py-4 font-medium text-emerald-800 shadow-[0_14px_30px_-14px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5 hover:bg-emerald-50"><WhatsappIcon /> Falar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          <a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="contato" target="_blank" rel="noreferrer" className="mt-8 inline-flex min-h-13 items-center gap-3 rounded-full bg-white px-7 py-4 font-medium text-emerald-800 shadow-[0_14px_30px_-14px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5 hover:bg-emerald-50"><WhatsappIcon /> Falar pelo WhatsApp <span aria-hidden="true">↗</span></a>
           <dl className="mt-10 grid w-full max-w-xl gap-5 border-t border-white/15 pt-8 text-sm sm:grid-cols-3">
             <div>
               <dt className="text-xs uppercase tracking-[0.18em] text-emerald-200">WhatsApp</dt>
-              <dd className="mt-1"><a href={getWhatsappLink()} target="_blank" rel="noreferrer" className="hover:underline">{siteConfig.whatsappDisplay}</a></dd>
+              <dd className="mt-1"><a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="contato-numero" target="_blank" rel="noreferrer" className="hover:underline">{siteConfig.whatsappDisplay}</a></dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-[0.18em] text-emerald-200">Instagram</dt>

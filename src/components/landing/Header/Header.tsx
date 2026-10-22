@@ -65,7 +65,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <a href={getWhatsappLink()} target="_blank" rel="noreferrer" className="hidden min-h-11 shrink-0 items-center rounded-full bg-emerald-800 px-5 py-2 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-emerald-950 sm:inline-flex">
+          <a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="header" target="_blank" rel="noreferrer" className="hidden min-h-11 shrink-0 items-center rounded-full bg-emerald-800 px-5 py-2 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-emerald-950 sm:inline-flex">
             Agendar consulta
           </a>
           <button
@@ -95,7 +95,7 @@ export function Header() {
               {link.label}
             </a>
           ))}
-          <a onClick={closeMenu} className="mt-1 rounded-xl bg-emerald-800 px-4 py-3 text-center font-medium text-white hover:bg-emerald-950" href={getWhatsappLink()} target="_blank" rel="noreferrer">
+          <a onClick={closeMenu} className="mt-1 rounded-xl bg-emerald-800 px-4 py-3 text-center font-medium text-white hover:bg-emerald-950" href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="menu-mobile" target="_blank" rel="noreferrer">
             Agendar pelo WhatsApp
           </a>
         </nav>

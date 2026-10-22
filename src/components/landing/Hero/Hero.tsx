@@ -14,7 +14,7 @@ export function Hero() {
           </h1>
           <p style={{ "--delay": "260ms" } as React.CSSProperties} className="animate-fade-up mt-6 max-w-md text-base leading-8 text-stone-600">Cuidar de você começa com escuta. Um acompanhamento nutricional que respeita sua rotina, sua história e seus objetivos.</p>
           <div style={{ "--delay": "360ms" } as React.CSSProperties} className="animate-fade-up mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-7">
-            <a href={getWhatsappLink()} target="_blank" rel="noreferrer" className="group inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-emerald-800 px-7 py-4 text-sm font-medium text-white shadow-[0_14px_30px_-14px_rgba(6,78,59,0.8)] transition hover:-translate-y-0.5 hover:bg-emerald-950"><WhatsappIcon /> Agendar minha consulta <span aria-hidden="true" className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span></a>
+            <a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="hero" target="_blank" rel="noreferrer" className="group inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-emerald-800 px-7 py-4 text-sm font-medium text-white shadow-[0_14px_30px_-14px_rgba(6,78,59,0.8)] transition hover:-translate-y-0.5 hover:bg-emerald-950"><WhatsappIcon /> Agendar minha consulta <span aria-hidden="true" className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span></a>
             <a href="#como-funciona" className="py-2 text-sm text-stone-600 underline decoration-stone-300 underline-offset-4 hover:text-emerald-800">Conheça o acompanhamento</a>
           </div>
         </div>

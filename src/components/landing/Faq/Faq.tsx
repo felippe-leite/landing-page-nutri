@@ -10,7 +10,7 @@ export function Faq() {
           <SectionHeading eyebrow="Dúvidas" title="Antes de começar, talvez você queira saber…" />
           <Reveal delay={100}>
             <p className="mt-6 text-stone-600">Não encontrou o que procurava?</p>
-            <a href={getWhatsappLink("Olá Nutri Luana Leite, tenho uma dúvida sobre o atendimento.")} target="_blank" rel="noreferrer" className="mt-2 inline-flex min-h-11 items-center gap-2 font-medium text-emerald-800 underline decoration-emerald-800/30 underline-offset-4 transition hover:decoration-emerald-800">
+            <a href={getWhatsappLink("Olá Nutri Luana Leite, tenho uma dúvida sobre o atendimento.")} data-track="whatsapp_click" data-track-origem="faq" target="_blank" rel="noreferrer" className="mt-2 inline-flex min-h-11 items-center gap-2 font-medium text-emerald-800 underline decoration-emerald-800/30 underline-offset-4 transition hover:decoration-emerald-800">
               Envie sua pergunta pelo WhatsApp <span aria-hidden="true">↗</span>
             </a>
           </Reveal>

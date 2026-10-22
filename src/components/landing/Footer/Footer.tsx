@@ -20,7 +20,7 @@ export function Footer() {
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">Contato</p>
           <ul className="mt-3 grid gap-1">
-            <li><a href={getWhatsappLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-9 items-center transition hover:text-white">WhatsApp {siteConfig.whatsappDisplay}</a></li>
+            <li><a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="footer" target="_blank" rel="noreferrer" className="inline-flex min-h-9 items-center transition hover:text-white">WhatsApp {siteConfig.whatsappDisplay}</a></li>
             <li><a href={getInstagramLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-9 items-center transition hover:text-white">Instagram {siteConfig.instagram}</a></li>
             <li><a href={siteConfig.youtube.url} target="_blank" rel="noreferrer" className="inline-flex min-h-9 items-center transition hover:text-white">YouTube · {siteConfig.youtube.name}</a></li>
           </ul>

@@ -17,6 +17,8 @@ export function FloatingWhatsapp() {
   return (
     <a
       href={getWhatsappLink()}
+      data-track="whatsapp_click"
+      data-track-origem="botao-flutuante"
       target="_blank"
       rel="noreferrer"
       aria-label="Agendar consulta pelo WhatsApp"

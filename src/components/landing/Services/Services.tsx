@@ -77,6 +77,9 @@ export function Services() {
             </ul>
             <a
               href={getWhatsappLink(`Olá Nutri Luana Leite, gostaria de saber mais sobre o acompanhamento para ${objective.title.toLowerCase()}.`)}
+              data-track="whatsapp_click"
+              data-track-origem="objetivos"
+              data-track-detalhe={objective.id}
               target="_blank"
               rel="noreferrer"
               className="inline-flex w-fit items-center gap-3 rounded-full bg-emerald-800 px-6 py-3.5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-emerald-950 lg:mt-auto"

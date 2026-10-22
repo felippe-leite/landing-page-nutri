@@ -36,6 +36,9 @@ export function Pricing() {
               </ul>
               <a
                 href={getWhatsappLink(consultation.message)}
+                data-track="whatsapp_click"
+                data-track-origem="consultas"
+                data-track-detalhe={consultation.title}
                 target="_blank"
                 rel="noreferrer"
                 className={`mt-9 inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-5 py-3 font-medium transition ${
