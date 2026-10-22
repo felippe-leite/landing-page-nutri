@@ -5,7 +5,7 @@ import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 export function Ebooks() {
   return (
-    <section className="overflow-hidden bg-[#f4f0e8] py-20 sm:py-28">
+    <section className="overflow-hidden bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-12">
         {ebooks.map((ebook) => (
           <div key={ebook.title} className="grid items-center gap-14 lg:grid-cols-[0.75fr_1.25fr]">
@@ -24,7 +24,7 @@ export function Ebooks() {
               <Reveal delay={120}>
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {ebook.highlights.map((highlight) => (
-                    <li key={highlight} className="flex items-center gap-3 rounded-2xl border border-emerald-900/10 bg-white/70 px-4 py-3 text-stone-700">
+                    <li key={highlight} className="flex items-center gap-3 rounded-2xl border border-emerald-900/10 bg-stone-50 px-4 py-3 text-stone-700">
                       <span aria-hidden="true" className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs text-emerald-800">✓</span>
                       {highlight}
                     </li>

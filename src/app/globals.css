@@ -58,6 +58,22 @@ h1, h2 {
   to { opacity: 1; transform: none; }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+/* Camadas do retrato do topo seguem o mouse com suavidade */
+.parallax-layer {
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform;
+}
+
 .animate-fade-up {
   animation: fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   animation-delay: var(--delay, 0ms);
@@ -70,4 +86,6 @@ h1, h2 {
     animation-duration: 0.01ms !important;
   }
   .reveal[data-state="hidden"] { opacity: 1; transform: none; }
+  .animate-float { animation: none; }
+  .parallax-layer { transform: none !important; }
 }

@@ -14,7 +14,7 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 - [ ] Nome da clínica/local de atendimento
 - [ ] Convênios aceitos
 - [ ] Dias e horários disponíveis
-- [ ] Aprovar a logo recriada (lótus + "Luana Leite") — foi redesenhada a partir da placa do consultório; se existir o arquivo original da designer (SVG/AI/PDF), substituir em `src/components/brand/Logo.tsx`
+- [ ] Aprovar a logo nova (maçã em traço fino + "Luana Leite" cursivo) — baseada na placa do consultório, com a maçã no lugar do lótus; se existir arquivo original da designer (SVG/AI/PDF), substituir em `src/components/brand/Logo.tsx`
 - [ ] Confirmar a grafia e formatação do CRN (hoje: `CRN-15793`; o padrão costuma incluir a região, ex.: `CRN-1 15793`)
 
 ### Importante
@@ -30,7 +30,10 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 ### Depois
 
 - [ ] Outros e-books: nomes, capas e links da Hotmart (hoje só o volume 01)
+- [ ] Números reais para uma faixa de credibilidade abaixo do topo (ex.: pacientes atendidos, anos de experiência)
+- [ ] Fotos reais (6–8, mesma luz e tom quente das fotos atuais) para substituir as de banco em "Como funciona" e "Avaliações": consultório, bioimpedância, Luana atendendo, pratos montados
 - [ ] Depoimentos reais **com autorização por escrito** de cada paciente
+  - Atenção às regras do CFN para divulgação: evitar fotos de "antes e depois" de pacientes
 - [ ] Fotos do consultório
 - [ ] Demais redes sociais além de Instagram e YouTube
 - [ ] Link de agendamento online, se existir
@@ -42,7 +45,7 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
   - Ao usar domínio próprio, definir `NEXT_PUBLIC_SITE_URL` na Vercel e fazer redeploy
 - [ ] Criar o Perfil da Empresa no Google (Google Meu Negócio)
 - [ ] Cadastrar o site no Google Search Console e enviar o `sitemap.xml`
-- [ ] Em 1–2 semanas, checar no Vercel Analytics se os eventos `whatsapp_click` e `ebook_click` aparecem
+- [ ] Em 1–2 semanas, checar no Vercel Analytics se os eventos `whatsapp_click`, `social_click` (Instagram/YouTube) e `ebook_click` aparecem
   - Eventos personalizados podem exigir o plano Pro. Se não aparecerem, criar uma propriedade GA4 e passar o ID (`G-XXXX`) para integrar no `ClickTracker`
 - [ ] Testar a prévia do link enviando o site no WhatsApp (imagem gerada em `/opengraph-image`)
 
@@ -52,6 +55,8 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 - [ ] Seção/lista de e-books com vários volumes
 - [ ] Mapa ou endereço na seção de contato
 - [ ] Ampliar o FAQ com pagamento, duração e cancelamento
+- [ ] Faixa de números/credibilidade abaixo do topo (quando os números chegarem)
+- [ ] Trocar fotos de banco pelas reais e padronizar textos dos botões principais com o verbo "Agendar"
 
 ## Concluído
 
@@ -61,4 +66,7 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 - [x] SEO: Open Graph, imagem de compartilhamento 1200×630, JSON-LD, sitemap e robots
 - [x] Política de privacidade (`/privacidade`) e página 404
 - [x] Limpeza das imagens não usadas do site antigo
-- [x] Logo nova em SVG (header, favicon, ícone do iPhone e imagem de compartilhamento), no lugar da logo antiga das maçãs
+- [x] Foto nova (jaleco, consultório atual) no topo; foto do blazer na seção de contato
+- [x] Lighthouse mobile: Acessibilidade 100, SEO 100, Desempenho ~95
+- [x] Página mais curta: removida a seção "O cuidado muda" (repetia as abas de objetivos); foto redonda da Luana no topo do celular
+- [x] Logo nova em SVG — maçã em traço fino + "Luana Leite" (header, favicon, ícone do iPhone e imagem de compartilhamento)

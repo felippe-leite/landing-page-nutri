@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { getInstagramLink, getWhatsappLink, siteConfig } from "@/data/site";
+import { getWhatsappLink, siteConfig } from "@/data/site";
 import { Reveal } from "../Reveal/Reveal";
+import { socialChannels } from "../SocialLinks/SocialLinks";
 import { WhatsappIcon } from "../WhatsappIcon/WhatsappIcon";
 
 export function ContactCta() {
@@ -19,20 +20,21 @@ export function ContactCta() {
           <h2 className="mt-4 text-4xl leading-tight tracking-tight sm:text-5xl">Vamos começar essa conversa?</h2>
           <p className="mt-5 max-w-lg leading-7 text-emerald-50/90">Entre em contato para conhecer o acompanhamento e encontrar o melhor formato para você.</p>
           <a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="contato" target="_blank" rel="noreferrer" className="mt-8 inline-flex min-h-13 items-center gap-3 rounded-full bg-white px-7 py-4 font-medium text-emerald-800 shadow-[0_14px_30px_-14px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5 hover:bg-emerald-50"><WhatsappIcon /> Falar pelo WhatsApp <span aria-hidden="true">↗</span></a>
-          <dl className="mt-10 grid w-full max-w-xl gap-5 border-t border-white/15 pt-8 text-sm sm:grid-cols-3">
-            <div>
-              <dt className="text-xs uppercase tracking-[0.18em] text-emerald-200">WhatsApp</dt>
-              <dd className="mt-1"><a href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="contato-numero" target="_blank" rel="noreferrer" className="hover:underline">{siteConfig.whatsappDisplay}</a></dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-[0.18em] text-emerald-200">Instagram</dt>
-              <dd className="mt-1"><a href={getInstagramLink()} target="_blank" rel="noreferrer" className="hover:underline">{siteConfig.instagram}</a></dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-[0.18em] text-emerald-200">YouTube</dt>
-              <dd className="mt-1"><a href={siteConfig.youtube.url} target="_blank" rel="noreferrer" className="hover:underline">{siteConfig.youtube.name}</a></dd>
-            </div>
-          </dl>
+          <ul className="mt-10 grid w-full max-w-xl gap-3 border-t border-white/15 pt-8 text-sm sm:grid-cols-3">
+            {socialChannels.map(({ id, label, handle, href, Icon, event }) => (
+              <li key={id}>
+                <a href={href} data-track={event} data-track-origem="contato-canais" data-track-detalhe={id} target="_blank" rel="noreferrer" className="group flex items-center gap-3 rounded-2xl p-2 -m-2 transition hover:bg-white/10">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition group-hover:bg-white group-hover:text-emerald-800">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[11px] uppercase tracking-[0.18em] text-emerald-200">{label}</span>
+                    <span className="block truncate">{handle}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
           <p className="mt-6 text-xs leading-6 text-emerald-100">Atendimento online e presencial em Brasília.</p>
         </Reveal>
       </div>

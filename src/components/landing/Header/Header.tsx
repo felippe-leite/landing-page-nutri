@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/brand/Logo";
-import { getWhatsappLink, navLinks, siteConfig } from "@/data/site";
+import { getWhatsappLink, navLinks } from "@/data/site";
+import { SocialLinks } from "../SocialLinks/SocialLinks";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +50,7 @@ export function Header() {
       }`}
     >
       <div className={`relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 transition-[padding] duration-300 lg:px-12 ${scrolled ? "py-1" : "py-4"}`}>
-        <a href="#inicio" onClick={closeMenu} aria-label={`${siteConfig.name} — início`} className="shrink-0 py-2 transition-opacity hover:opacity-80">
+        <a href="#inicio" onClick={closeMenu} className="shrink-0 py-2 transition-opacity hover:opacity-80">
           <Logo />
         </a>
         <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-sm text-stone-600 lg:flex">
@@ -98,6 +99,7 @@ export function Header() {
           <a onClick={closeMenu} className="mt-1 rounded-xl bg-emerald-800 px-4 py-3 text-center font-medium text-white hover:bg-emerald-950" href={getWhatsappLink()} data-track="whatsapp_click" data-track-origem="menu-mobile" target="_blank" rel="noreferrer">
             Agendar pelo WhatsApp
           </a>
+          <SocialLinks origem="menu-mobile" tone="light" className="mt-2 justify-center border-t border-stone-100 pt-3" />
         </nav>
       </div>
     </header>

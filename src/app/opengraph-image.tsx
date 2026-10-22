@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { LOTUS_PATHS, LOTUS_VIEWBOX } from "@/components/brand/Logo";
+import { MARK_PATHS, MARK_VIEWBOX } from "@/components/brand/Logo";
 import { siteConfig } from "@/data/site";
 
 export const alt = `${siteConfig.name} — ${siteConfig.specialty}`;
@@ -33,7 +33,7 @@ export default async function OpengraphImage() {
     loadGoogleFont("Hurricane", "Luana Leite"),
     loadGoogleFont("Manrope:wght@500", `${tagline.toUpperCase()}${subtitle}`),
   ]);
-  const lotus = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${LOTUS_VIEWBOX}" fill="none" stroke="#5b6b47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${LOTUS_PATHS.map((d) => `<path d="${d}"/>`).join("")}</svg>`;
+  const mark = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${MARK_VIEWBOX}" fill="none" stroke="#3f5a3c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${MARK_PATHS.map((d) => `<path d="${d}"/>`).join("")}</svg>`;
 
   return new ImageResponse(
     (
@@ -46,7 +46,7 @@ export default async function OpengraphImage() {
             {headline}
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <img src={`data:image/svg+xml;base64,${Buffer.from(lotus).toString("base64")}`} width={76} height={54} alt="" />
+            <img src={`data:image/svg+xml;base64,${Buffer.from(mark).toString("base64")}`} width={66} height={66} alt="" />
             <div style={{ display: "flex", flexDirection: "column", marginLeft: 20 }}>
               <div style={{ fontFamily: hurricane ? "Hurricane" : undefined, fontSize: 64, lineHeight: 0.9, color: "#022c22" }}>Luana Leite</div>
               <div style={{ marginTop: 8, fontSize: 21, color: "#57534e" }}>
