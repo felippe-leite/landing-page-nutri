@@ -14,6 +14,8 @@ Criar uma landing page profissional para divulgar os atendimentos particulares d
 - **Atendimento:** convênio e particular
 - **Instagram:** `@luana.leite.nutri`
 - **WhatsApp:** +55 61 9317-8232
+- **YouTube:** [A Nutri do Porquê](https://www.youtube.com/@NUTRIDOPORQUE)
+- **Títulos (site antigo):** Nutricionista Clínica Funcional Integrativa; Nutricionista Clínica Esportiva; Especialista em suplementação fitoterápica; Coaching em emagrecimento e hipertrofia
 
 ## Consultas
 
@@ -59,6 +61,10 @@ Luana possui vários e-books. Um material identificado até o momento:
 
 Material com orientações sobre rotina alimentar, hidratação, lanches inteligentes, receitas e pequenas mudanças para apoiar o emagrecimento.
 
+- Vendido na Hotmart: https://hotmart.com/pt-br/marketplace/produtos/a-rotina-alimentar-que-te-faz-emagrecer/V90905790N?preview=true
+- Capa: "Volume 01", receitas fáceis para agenda movimentada, "+5 molhos" (salva em `public/images/ebook-rotina-alimentar.png`)
+- Preço não aparece na página pública da Hotmart
+
 Também existe referência a um **Programa de Exercícios Moderno**, mas é necessário confirmar se ele continua ativo e será divulgado na nova página.
 
 ## Mensagens e posicionamento
@@ -101,8 +107,9 @@ Conceitos principais da comunicação:
 - Convênios aceitos
 - Duração das consultas e do acompanhamento mensal
 - Confirmação dos protocolos atualmente oferecidos
-- Links e nomes dos outros e-books
-- Confirmação sobre o Programa de Exercícios Moderno
+- Links e nomes dos outros e-books (o site antigo só tinha o volume 01)
+- Confirmação sobre o Programa de Exercícios Moderno (no site antigo aparece só o título + "Saiba mais", sem link próprio)
+- Detalhes e valor do "Acompanhamento mensal" (citado no site antigo, sem descrição)
 - Depoimentos reais com autorização de uso
 - Fotos do consultório
 - Demais redes sociais
@@ -115,3 +122,7 @@ Conceitos principais da comunicação:
 - Diferenciar claramente o atendimento particular da atuação em clínica.
 - Adicionar política de privacidade e cuidados com dados de contato.
 
+
+## Fonte
+
+Dados extraídos em 22/10/2026 do site antigo (Canva): https://inforempresa.com.br/nutriluanaleite
