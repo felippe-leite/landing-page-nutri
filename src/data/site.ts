@@ -137,6 +137,36 @@ export const ebooks = [
   },
 ];
 
+export const testimonials = [
+  {
+    name: "Adriana",
+    image: "/images/Adriana.jpeg",
+    width: 304,
+    height: 285,
+    crop: { x: 33, y: 24, size: 212 },
+    quote:
+      "A doutora Luana foi um divisor de águas em minha vida. Cheguei em março deste ano com 110 kg, glicemia e pressão muito altas, passando muito mal. Pedi a ela um plano alimentar com alimentos que eu já consumia, sem nada muito difícil para o meu paladar. Ao longo do ano, ela me orientou com alimentos que eu já tinha em casa. Hoje, no final de outubro, estou com 73 kg, minha glicemia não está mais alta e minha pressão está normalizada. Aprendi a comer e tenho uma nova vida. Uma excelente profissional, muito sábia no que faz.",
+  },
+  {
+    name: "Giovana",
+    image: "/images/%20Giovana.jpeg",
+    width: 294,
+    height: 275,
+    crop: { x: 31, y: 21, size: 232 },
+    quote:
+      "Você é uma nutricionista excelente, sempre em busca do melhor atendimento para o paciente, sem dietas mirabolantes que ninguém consiga seguir. Consegue encaixar a alimentação na rotina da pessoa e torná-la mais leve. Está sempre atenta aos exames e à suplementação de vitaminas, com foco tanto nos resultados externos quanto na saúde interna do paciente. Está sempre disponível para tirar dúvidas e fazer novos ajustes durante o processo. É uma profissional que vive o que prega. Já indiquei para várias pessoas, e todas que foram gostaram muito. Simplesmente a melhor!",
+  },
+  {
+    name: "Thayná",
+    image: "/images/Thayn%C3%A1.jpeg",
+    width: 253,
+    height: 280,
+    crop: { x: 5, y: 28, size: 224 },
+    quote:
+      "Muito atenciosa, prestativa e competente. Estou gostando muito! Sou de poucas palavras!",
+  },
+];
+
 export const faqs = [
   {
     question: "Como funciona a primeira consulta?",
