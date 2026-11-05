@@ -108,19 +108,19 @@ export const assessments = [
 
 export const consultations = [
   {
-    title: "Consulta online",
-    price: "R$ 130",
-    description: "Atendimento por videochamada, de onde você estiver.",
-    includes: ["Avaliação por fotos", "Plano alimentar individualizado", "Atendimento sem deslocamento"],
-    message: "Olá Nutri Luana Leite, eu gostaria de agendar uma consulta online.",
+    title: "Consulta individual",
+    description: "Um encontro para conhecer sua rotina, avaliar suas necessidades e orientar sua alimentação.",
+    includes: ["Atendimento online ou presencial", "Avaliação nutricional conforme a modalidade", "Plano alimentar individualizado"],
+    message: "Olá Nutri Luana Leite, eu gostaria de saber mais sobre a consulta individual.",
+    action: "Agendar consulta individual",
     featured: false,
   },
   {
-    title: "Consulta presencial",
-    price: "R$ 250",
-    description: "Atendimento em Brasília com avaliação física completa.",
-    includes: ["Avaliação física e antropometria", "Bioimpedância e simetria corporal", "Plano alimentar individualizado"],
-    message: "Olá Nutri Luana Leite, eu gostaria de agendar uma consulta presencial.",
+    title: "Protocolo de emagrecimento",
+    description: "Protocolo de acompanhamento para construir hábitos alimentares alinhados aos seus objetivos e à sua rotina.",
+    includes: ["Estratégia alimentar personalizada", "Ajustes ao longo do acompanhamento", "Formato e condições combinados na conversa com a Luana"],
+    message: "Olá Nutri Luana Leite, eu gostaria de conhecer o protocolo de acompanhamento para emagrecimento.",
+    action: "Conhecer o protocolo",
     featured: true,
   },
 ];
@@ -179,9 +179,9 @@ export const faqs = [
       "Sim. Luana atende online, de qualquer lugar, e presencialmente em Brasília. Na consulta online, a avaliação é feita por fotos.",
   },
   {
-    question: "Quais são os valores?",
+    question: "Como combinar minha consulta ou acompanhamento?",
     answer:
-      "A consulta online custa R$ 130 e a consulta presencial, com avaliação física e antropometria, custa R$ 250.",
+      "Entre em contato pelo WhatsApp para conversar diretamente com a Luana sobre a consulta individual ou o protocolo de emagrecimento. O formato, os valores e as condições são combinados conforme o atendimento escolhido.",
   },
   {
     question: "Vocês atendem por convênio?",

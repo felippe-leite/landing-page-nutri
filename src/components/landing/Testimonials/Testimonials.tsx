@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { testimonials } from "@/data/site";
+import { getInstagramLink, siteConfig, testimonials } from "@/data/site";
+import { InstagramIcon } from "../SocialLinks/SocialIcons";
 import { Reveal } from "../Reveal/Reveal";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
 
@@ -44,6 +45,18 @@ export function Testimonials() {
             </Reveal>
           ))}
         </div>
+        <Reveal className="mt-10 flex flex-col items-center gap-5 rounded-3xl bg-[#f4f0e8] px-6 py-8 text-center sm:px-10">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-emerald-800">
+            <InstagramIcon className="h-6 w-6" />
+          </span>
+          <div>
+            <h3 className="font-serif text-2xl text-emerald-950">Acompanhe também pelo Instagram.</h3>
+            <p className="mt-2 max-w-xl text-sm leading-7 text-stone-600">Visite o perfil da Luana e confira os depoimentos e conteúdos sobre emagrecimento e acompanhamento nutricional que ela compartilha por lá.</p>
+          </div>
+          <a href={getInstagramLink()} data-track="social_click" data-track-origem="depoimentos" data-track-detalhe="instagram" target="_blank" rel="noreferrer" className="inline-flex min-h-12 max-w-full items-center justify-center gap-3 rounded-full bg-emerald-800 px-6 py-3 text-sm font-medium text-white transition hover:bg-emerald-950">
+            <span>Ver {siteConfig.instagram}</span><span aria-hidden="true">↗</span>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

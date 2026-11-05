@@ -43,7 +43,6 @@ const jsonLd = {
   areaServed: [siteConfig.city, "Online"],
   address: { "@type": "PostalAddress", addressLocality: siteConfig.city, addressRegion: "DF", addressCountry: "BR" },
   sameAs: [`https://instagram.com/${siteConfig.instagram.replace("@", "")}`, siteConfig.youtube.url],
-  priceRange: "R$ 130 - R$ 250",
 };
 
 export default function RootLayout({

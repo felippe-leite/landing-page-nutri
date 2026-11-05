@@ -4,6 +4,29 @@ Site em produção: https://landing-page-nutri-brown.vercel.app
 
 Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir um item, marque `[x]` e, se for conteúdo, atualize `src/data/site.ts`.
 
+## Retomada — pedido da Luana em 05/11/2026
+
+A Luana pediu mais relatos reais sobre emagrecimento e acompanhamento, destaque para o Instagram e retirada dos valores públicos. Ela pretende reenviar imagens e tentar recuperar os comentários antigos do Google Meu Negócio. A quantidade mencionada por ela (mais de cem comentários) não foi publicada no site nem verificada.
+
+Implementado localmente, pronto para o commit do Felippe:
+
+- Valores removidos dos cartões, FAQ e JSON-LD (`priceRange`).
+- Opções reorganizadas em **Consulta individual** e **Protocolo de emagrecimento**, apresentado como protocolo de acompanhamento, com mensagens específicas para WhatsApp.
+- Formato e condições do atendimento combinados diretamente com a Luana, sem inventar duração ou quantidade de consultas.
+- Bloco de Instagram junto aos depoimentos, apontando para `@luana.leite.nutri`.
+- Mantidos os três relatos recebidos: Adriana, Giovana e Thayná.
+- Briefing atualizado; lint, TypeScript e verificação de espaços do diff passaram.
+
+Na próxima sessão:
+
+1. Conferir o estado do Git: Felippe fará o commit; ainda não há confirmação de envio destas mudanças ao GitHub ou de deploy.
+2. Receber os novos relatos e fotos reais e integrá-los à seção de depoimentos, preservando o conteúdo e o enquadramento circular das fotos.
+3. Receber o link específico do destaque ou publicação de depoimentos no Instagram; por enquanto o botão abre o perfil.
+4. Se os comentários do Google forem recuperados, selecionar os relatos fornecidos pela Luana para inclusão.
+5. Fazer validação visual em celular, tablet e desktop. Os breakpoints foram conferidos no código, mas ainda não houve validação visual completa em diferentes larguras.
+
+Não criar depoimentos, nomes ou resultados para preencher a seção. Não publicar números de pacientes ou avaliações sem confirmação.
+
 ## 1. Validar com a Luana
 
 ### Antes de divulgar (essencial)
@@ -22,7 +45,7 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 - [ ] Duração da consulta e do retorno → nova pergunta no FAQ
 - [ ] Formas de pagamento → nova pergunta no FAQ
 - [ ] Política de cancelamento e remarcação → nova pergunta no FAQ
-- [ ] "Acompanhamento mensal": o que inclui e valor (citado no site antigo, sem detalhes)
+- [ ] Confirmar duração e detalhes do protocolo de acompanhamento; valores tratados diretamente com o paciente
 - [ ] "Programa de Exercícios Moderno": continua ativo? Entra no site?
 - [ ] Formação e instituições de ensino → seção "Sobre"
 - [ ] Especializações oficiais (confirmar os títulos usados: clínica esportiva, suplementação fitoterápica, coaching)
@@ -51,7 +74,8 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 
 ## 3. Código (quando o conteúdo chegar)
 
-- [ ] Seção de depoimentos reais (o nome `Testimonials` ficou livre para isso)
+- [ ] Ampliar os depoimentos sobre emagrecimento e acompanhamento quando a Luana enviar os novos relatos e imagens
+- [ ] Receber o link específico dos depoimentos no Instagram (por enquanto o botão leva ao perfil)
 - [ ] Seção/lista de e-books com vários volumes
 - [ ] Mapa ou endereço na seção de contato
 - [ ] Ampliar o FAQ com pagamento, duração e cancelamento
@@ -59,6 +83,9 @@ Contexto e dados confirmados ficam em [briefing.md](./briefing.md). Ao concluir 
 - [ ] Trocar fotos de banco pelas reais e padronizar textos dos botões principais com o verbo "Agendar"
 
 ## Concluído
+
+- [x] Três depoimentos recebidos com fotos circulares e link para o perfil do Instagram
+- [x] Consulta individual e protocolo de emagrecimento com links próprios para WhatsApp; valores removidos dos cartões, FAQ e dados estruturados
 
 - [x] Redesign com tipografia, animações e seções interativas
 - [x] Conteúdo e e-book extraídos do site antigo (Canva)

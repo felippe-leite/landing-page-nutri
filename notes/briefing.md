@@ -19,15 +19,22 @@ Criar uma landing page profissional para divulgar os atendimentos particulares d
 
 ## Consultas
 
-### Consulta online
+### Consulta individual
 
-- Valor: R$ 130
-- Inclui avaliação por fotos
+- Atendimento online ou presencial; online com avaliação por fotos, presencial com avaliação física e antropometria
+- Sem valores públicos: condições combinadas diretamente com a Luana pelo WhatsApp
 
-### Consulta presencial
+### Protocolo de emagrecimento
 
-- Valor: R$ 250
-- Inclui avaliação física e antropometria
+- Protocolo de acompanhamento com estratégia alimentar personalizada e ajustes ao longo do processo
+- Formato, duração e condições a combinar diretamente com a Luana; sem valores públicos
+
+### Depoimentos e Instagram
+
+- Exibir os três relatos recebidos: Adriana, Giovana e Thayná
+- Luana enviará mais imagens e relatos reais sobre emagrecimento e acompanhamento
+- Destacar o perfil `@luana.leite.nutri` junto aos depoimentos
+- Aguardar o link específico do destaque ou publicação de depoimentos para oferecer acesso direto
 
 ## Áreas de atuação e protocolos
 
@@ -83,7 +90,7 @@ Conceitos principais da comunicação:
 - Benefícios do acompanhamento
 - Como funciona
 - Serviços e protocolos
-- Modalidades e valores
+- Consulta individual e protocolo de acompanhamento, sem valores
 - Sobre a nutricionista
 - Áreas de atuação
 - FAQ
