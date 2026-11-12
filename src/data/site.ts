@@ -157,15 +157,6 @@ export const testimonials = [
       "Você é uma nutricionista excelente, sempre em busca do melhor atendimento para o paciente, sem dietas mirabolantes que ninguém consiga seguir. Consegue encaixar a alimentação na rotina da pessoa e torná-la mais leve. Está sempre atenta aos exames e à suplementação de vitaminas, com foco tanto nos resultados externos quanto na saúde interna do paciente. Está sempre disponível para tirar dúvidas e fazer novos ajustes durante o processo. É uma profissional que vive o que prega. Já indiquei para várias pessoas, e todas que foram gostaram muito. Simplesmente a melhor!",
   },
   {
-    name: "Thayná",
-    image: "/images/Thayn%C3%A1.jpeg",
-    width: 253,
-    height: 280,
-    crop: { x: 5, y: 28, size: 224 },
-    quote:
-      "Muito atenciosa, prestativa e competente. Estou gostando muito! Sou de poucas palavras!",
-  },
-  {
     name: "Gabriela",
     image: "/images/gabriela.jpeg",
     width: 231,
@@ -173,6 +164,15 @@ export const testimonials = [
     crop: { x: 18, y: 34, size: 195 },
     quote:
       "Quero deixar registrado o meu agradecimento por todo o carinho, apoio e dedicação ao longo do meu tratamento. ❤️ Desde que começamos o protocolo para tratar a disbiose e retomar minha rotina de treinos na academia, tenho percebido uma melhora enorme. Uma das maiores conquistas, que pode parecer simples, mas que faz toda a diferença para mim, é conseguir ir ao banheiro todas as manhãs, sem dificuldade. Antes, isso era algo que me causava muito desconforto e dificuldade. Sou muito grata por todo o cuidado, pela atenção e por cada orientação. Seu protocolo tem me ajudado muito, e ver esses resultados me motiva ainda mais a continuar cuidando de mim. Obrigada por fazer parte dessa evolução e por conduzir tudo com tanto carinho e profissionalismo! Você tem sido maravilhosa. 💚",
+  },
+  {
+    name: "Thayná",
+    image: "/images/Thayn%C3%A1.jpeg",
+    width: 253,
+    height: 280,
+    crop: { x: 5, y: 28, size: 224 },
+    quote:
+      "Muito atenciosa, prestativa e competente. Estou gostando muito! Sou de poucas palavras!",
   },
 ];
 
